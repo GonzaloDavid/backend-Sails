@@ -7,14 +7,13 @@
  */
 module.exports = {
   
-  datastore: 'mysql',
-
+  //datastore: 'mysql',
+/*
   attributes: {
     zone: {type: 'string', required: true},
     camera: {type: 'string', required: true},
     sensor: {type: 'string', required: true},
     value : {type: 'number', required: true},
     date : {type: 'string', required: true}
-  },
-
+  },*/
 };
