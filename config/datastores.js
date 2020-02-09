@@ -58,11 +58,11 @@ module.exports.datastores = {
     port      : 3306,
     user      : 'david',
     password  : 'Temporal2018.',
-    database  : 'mysql',
+    database  : 'Iot_Sensor',
     // Optional
     charset   : 'utf8',
     collation : 'utf8_spanish_ci',
-    url: 'mysql://david@localhost:3306/database',
+    url: 'mysql://david@localhost:3306/Iot_Sensor',
   }
 
 

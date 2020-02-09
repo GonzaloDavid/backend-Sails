@@ -32,7 +32,8 @@ module.exports.routes = {
   * not match any of those, it is matched against static assets.             *
   *                                                                          *
   ***************************************************************************/
-  'post /alarmaI': 'SensorController.compare',
+  'post /sensor': 'SensorController.compare',
+  'get /sensor': 'SensorController.compare',
  
 
 };
