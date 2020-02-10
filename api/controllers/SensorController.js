@@ -18,7 +18,7 @@ controller: function(req, res) {
     var date= sensorObject.date;
 
   const request = require('request');
-  console.log('sensor',req.body);
+  //console.log('sensor',req.body);
        const objetoRequest = {
       url: 'http://localhost:1337/sensorAux',
       form: {
@@ -33,5 +33,14 @@ controller: function(req, res) {
 
     
      return res.send(req.body);
+  },
+  getdata: async function(req, res)
+  {
+    var parametros=req.allParams();
+    console.log('req',req.allParams())
+    var data= await SensorAux.find({ zone: parametros.zone,camera:parametros.camera,sensor: parametros.sensor})
+    .sort('id DESC')
+    .limit(1);
+    return res.send(data);
   }
 };

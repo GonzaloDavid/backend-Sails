@@ -34,7 +34,7 @@ module.exports.routes = {
   ***************************************************************************/
   'post /sensor': 'SensorController.controller',
   'post /sensorAux': 'SensorControllerAux',
-  'get /sensor': 'SensorController',
+  'get /sensor': 'SensorController.getdata',
  
 
 };
